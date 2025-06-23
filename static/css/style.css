@@ -1,0 +1,86 @@
+
+body {
+    background-color: #202834;
+    color: #e8edf3;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    margin: 0;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-section {
+    background: #2d3b4f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 8px;
+    background: #3b4a5c;
+    color: white;
+    font-size: 16px;
+}
+button {
+    background-color: #42a5f5;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #64b5f6;
+}
+.top-bar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.dashboard {
+    background: #2d3b4f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+.dashboard-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.summary {
+    flex: 1;
+}
+.sales-pitch-box {
+    flex: 2;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3a475c;
+    white-space: pre-wrap;
+    font-size: 15px;
+    height: 100%;
+}
+.charts {
+    flex: 2;
+}
+canvas {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+}

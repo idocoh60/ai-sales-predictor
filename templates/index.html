@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Intelligence Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sales Intelligence Dashboard</h1>
+        <div id="formSection" class="form-section">
+            <label for="numPurchases">NUMBER OF PURCHASES</label>
+            <input type="number" id="numPurchases" name="NumPurchases" required>
+
+            <label for="totalSpent">TOTAL SPENT</label>
+            <input type="number" id="totalSpent" name="TotalSpent" required>
+
+            <label for="daysSince">DAYS SINCE LAST PURCHASE</label>
+            <input type="number" id="daysSince" name="DaysSinceLastPurchase" required>
+
+            <button onclick="sendPrediction()">PREDICT</button>
+        </div>
+
+        <div id="result" class="dashboard" style="display:none;">
+            <div class="top-bar">
+                <button onclick="resetForm()">ANOTHER PREDICTION</button>
+            </div>
+            <div class="dashboard-grid">
+                <div class="summary">
+                    <p><strong>PURCHASE:</strong> <span id="willBuy"></span></p>
+                    <p><strong>AMOUNT:</strong> <span id="expectedAmount"></span></p>
+                    <p><strong>RECOMMENDED:</strong> <span id="recommendedProduct"></span></p>
+                </div>
+                <div class="sales-pitch-box">
+                    <strong>SALES PITCH</strong>
+                    <div id="salesPitch"></div>
+                </div>
+                <div class="charts">
+                    <canvas id="spendingChart" height="200"></canvas>
+                    <canvas id="probabilityChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
