@@ -20,52 +20,34 @@ This project is a machine learning-powered system that predicts:
 
 1 Create a virtual environment:
 
-```bash
 python -m venv venv
-```
 
 2 Activate the environment:
 
 - On Mac/Linux:
 
-```bash
 source venv/bin/activate
-```
 
 - On Windows:
 
-```bash
 venv\Scripts\activate
-```
 
 3 Install required packages:
 
-```bash
 pip install -r requirements.txt
-```
 
-4 Run the application:
-
-```bash
-python app.py
-```
 
 ### Option 2 — Automatic Installation (Recommended):
 
 #### For Mac/Linux:
 
-```bash
-bash setup.sh
-```
+ setup.sh
 
 #### For Windows:
 
-```bash
 setup.bat
-```
 
 The script will handle everything for you.
-
 
 ## API Key Setup
 
@@ -75,13 +57,21 @@ Before running the application, you must configure your OpenAI API key.
 
 2 Inside the file, add the following line:
 
-```bash
 OPENAI_API_KEY=your_openai_api_key_here
-```
 
 3 Replace `your_openai_api_key_here` with your actual OpenAI API key obtained from your OpenAI account.
 
  Note: The `.env` file is not included in this repository for security reasons. You must create it manually before running the app.
+
+ ## Running the Application
+
+1 After completing the installation and API key setup, run:
+
+    python app.py
+2  Once the application starts, open your browser and navigate to:
+    http://127.0.0.1:5000
+    to access the AI Sales Predictor dashboard.
+
 
 ## Tech Stack
 - Python
