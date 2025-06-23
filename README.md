@@ -20,32 +20,44 @@ This project is a machine learning-powered system that predicts:
 
 1 Create a virtual environment:
 
+```bash
 python -m venv venv
+```
 
 2 Activate the environment:
 
 - On Mac/Linux:
 
+```bash
 source venv/bin/activate
+```
 
 - On Windows:
 
+```bash
 venv\Scripts\activate
+```
 
 3 Install required packages:
 
+```bash
 pip install -r requirements.txt
+```
 
 
 ### Option 2 — Automatic Installation (Recommended):
 
 #### For Mac/Linux:
 
+```bash
  setup.sh
+ ```
 
 #### For Windows:
 
+```bash
 setup.bat
+```
 
 The script will handle everything for you.
 
@@ -69,7 +81,10 @@ OPENAI_API_KEY=your_openai_api_key_here
 
     python app.py
 2  Once the application starts, open your browser and navigate to:
+
+    ```bash
     http://127.0.0.1:5000
+    ```
     to access the AI Sales Predictor dashboard.
 
 
