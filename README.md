@@ -69,7 +69,9 @@ Before running the application, you must configure your OpenAI API key.
 
 2 Inside the file, add the following line:
 
+```bash
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
 3 Replace `your_openai_api_key_here` with your actual OpenAI API key obtained from your OpenAI account.
 
@@ -82,9 +84,7 @@ OPENAI_API_KEY=your_openai_api_key_here
     python app.py
 2  Once the application starts, open your browser and navigate to:
 
-    ```bash
     http://127.0.0.1:5000
-    ```
     to access the AI Sales Predictor dashboard.
 
 
