@@ -3,3 +3,5 @@ joblib
 pandas
 openai
 python-dotenv
+scikit-learn
+
